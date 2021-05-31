@@ -2,10 +2,7 @@
 
 def s(*args : int) -> int :
     '''Sums the args passed and returns the result'''
-    a = 0
-    for item in args:
-        a += item
-    return a
+    return sum([arg for arg in args])
 
 def test_result():
     assert s(-1,2,3) == 4
