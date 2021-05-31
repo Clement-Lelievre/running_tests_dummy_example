@@ -4,8 +4,11 @@ def s(*args : int) -> int :
     '''Sums the args passed and returns the result'''
     return sum([arg for arg in args])
 
-def test_result():
+def test1():
     assert s(-1,2,3) == 4
+    
+def test2():
+    assert s(-4,-3) <0
     
     
 # in the shell, type : pytest func.py
